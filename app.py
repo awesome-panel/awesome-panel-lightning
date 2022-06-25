@@ -187,11 +187,12 @@ class LitPanelPage(lapp.LightningWork):
 
     def run(self):
         """Starts the server and serves the page"""
+        print("websocket_origin", self.websocket_origin)
         self._server = pn.serve(
             {"/": self._page},
             port=self.port,
             address=self.host,
-            websocket_origin=self.websocket_origin,
+            websocket_origin="*", # self.websocket_origin,
             show=False,
         )
 
@@ -206,6 +207,7 @@ class LitPanelPage(lapp.LightningWork):
 
     @property
     def websocket_origin(self) -> str:
+        print("APP_SERVER_HOST", constants.APP_SERVER_HOST)
         host = constants.APP_SERVER_HOST.replace("http://", "").replace("https://", "")
         return host + ":" + str(self.port)
 
