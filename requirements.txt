@@ -1,0 +1,5 @@
+lightning
+panel
+pandas
+holoviews
+hvplot
