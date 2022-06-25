@@ -4,6 +4,8 @@ Repository showcasing how to combine [Panel](https://panel.holoviz.org) and [lig
 
 ![awesome-panel-lightning tour](assets/awesome-panel-lightning.gif)
 
+Check out the [Example App](https://01g6d5mqceawxdbm5epsj7t5xk.litng-ai-03.litng.ai/view?id=01g6d5mqceawxdbm5epsj7t5xk).
+
 ## Install Locally
 
 [Create](https://realpython.com/python-virtual-environments-a-primer/#create-it) and [activate](https://realpython.com/python-virtual-environments-a-primer/#activate-it) your local environment. 
