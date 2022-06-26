@@ -31,7 +31,8 @@ def introduction():
     component = pn.Column(info, lightning, ilightning_string, sizing_mode="stretch_width")
 
     return pn.template.FastListTemplate(
-        title="Panel - Introduction",
+        site="Panel",
+        title="Introduction",
         accent_base_color=ACCENT,
         header_background=ACCENT,
         main=[component],
