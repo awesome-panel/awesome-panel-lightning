@@ -28,10 +28,15 @@ def introduction():
 
     lightning = pn.widgets.IntSlider(value=5, start=0, end=10, name="⚡")
     ilightning_string = pn.bind(lightning_string, value=lightning)
-    component = pn.Column(info, lightning, ilightning_string, sizing_mode="stretch_width")
+    
+    check_out = """
+Check out my site [awesome-panel.org](https://awesome-panel.org) for more inspiration.
+"""
+    
+    component = pn.Column(info, lightning, ilightning_string, check_out, sizing_mode="stretch_width")
 
     return pn.template.FastListTemplate(
-        site="Panel",
+        site="Awesome Panel",
         title="Introduction",
         accent_base_color=ACCENT,
         header_background=ACCENT,
@@ -58,7 +63,7 @@ class LitApp(lapp.LightningFlow):
             self.lit_intro.get_tab(name="Introduction"),
             self.lit_crossfilter.get_tab(name="Crossfiltering"),
             self.lit_streaming.get_tab(name="Streaming"),
-            self.lit_big_data_viz.get_tab(name="Big Data"),
+            self.lit_big_data_viz.get_tab(name="Big Data Viz"),
         ]
 
 
