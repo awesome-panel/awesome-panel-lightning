@@ -98,7 +98,7 @@ class LitPanelPage(lapp.LightningWork):
             {"/": self._page},
             port=self.port,
             address=self.host,
-            websocket_origin=self.websocket_origin,
+            websocket_origin="*",
             show=False,
         )
 
