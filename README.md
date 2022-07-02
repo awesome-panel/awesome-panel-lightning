@@ -10,6 +10,11 @@ Check out the live [Example App](https://01g6g6axybbecmx47d9m419pe5.litng-ai-03.
 
 ## ⚙️ Install Locally
 
+```bash
+git clone https://github.com/MarcSkovMadsen/awesome-panel-lightning.git
+cd awesome-panel-lightning
+```
+
 [Create](https://realpython.com/python-virtual-environments-a-primer/#create-it) and [activate](https://realpython.com/python-virtual-environments-a-primer/#activate-it) your local environment.
 
 Then install the requirements via
